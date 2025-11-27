@@ -1,0 +1,211 @@
+/* style.css - BizSense Hub Blog Styling (Professional Colors) */
+
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: #ffffff;
+    color: #111111;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0077cc;
+}
+.navbar nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #111111;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+.navbar nav a:hover, .navbar nav a.active {
+    color: #005fa3;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e0e0e0;
+}
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #0077cc;
+}
+.hero p {
+    font-size: 20px;
+    color: #555555;
+}
+
+/* Featured Posts */
+.featured {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+.featured h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #0077cc;
+    display: inline-block;
+    padding-bottom: 5px;
+    color: #0077cc;
+}
+.featured-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.featured-card {
+    flex: 1 1 45%;
+    border: 1px solid #e0e0e0;
+    padding: 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #111111;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #ffffff;
+}
+.featured-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: #005fa3;
+}
+.featured-card h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #0077cc;
+}
+.featured-card p {
+    color: #555555;
+    margin-top: 10px;
+}
+
+/* Categories */
+.categories {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+.categories h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0077cc;
+}
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.category-card {
+    padding: 12px 22px;
+    background: #e9ecef;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+.category-card:hover {
+    background: #d0d8e0;
+    color: #005fa3;
+}
+
+/* All Posts */
+.posts {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+.posts h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #0077cc;
+    display: inline-block;
+    padding-bottom: 5px;
+    color: #0077cc;
+}
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.post-card {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: #111111;
+    transition: color 0.2s;
+}
+.post-card:hover {
+    color: #005fa3;
+}
+.post-card h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #0077cc;
+}
+.post-card p {
+    margin-top: 8px;
+    color: #555555;
+}
+
+/* Images - Featured & Posts */
+.featured-img, .post-img, .post-content img {
+    width: 100%;
+    max-width: 800px;  /* ensures image isn't too big */
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Images - Featured & Posts */
+.featured-img, .post-img, .post-content img {
+    width: 100%;            /* fills container width */
+    max-width: 1000px;      /* prevents it from being too huge */
+    height: 400px;          /* fixed height for uniform display */
+    object-fit: cover;      /* crops but keeps proportions */
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #777777;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .featured-grid {
+        flex-direction: column;
+    }
+    .featured-card {
+        flex: 1 1 100%;
+    }
+}
