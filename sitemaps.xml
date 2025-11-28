@@ -7,23 +7,10 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Blog post page -->
+  <!-- Post page -->
   <url>
     <loc>https://iketestimony23-prog.github.io/bizsense-hubo/post.html</loc>
     <priority>0.8</priority>
-  </url>
-
-  <!-- Add more pages here -->
-  <!-- Example about page -->
-  <url>
-    <loc>https://iketestimony23-prog.github.io/bizsense-hubo/about.html</loc>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Example contact page -->
-  <url>
-    <loc>https://iketestimony23-prog.github.io/bizsense-hubo/contact.html</loc>
-    <priority>0.5</priority>
   </url>
 
 </urlset>
